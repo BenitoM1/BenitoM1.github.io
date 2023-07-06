@@ -90,7 +90,7 @@ function start(){
 
 	}
 
-	if(score == 1){
+	if(score == 25){
 		startBool = false
 		winBool = true
 	}
