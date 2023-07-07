@@ -1,9 +1,21 @@
+
+
+let newsun
+
+function preload(){
+  sun = loadImage('sun3.png')
+}
+
 function setup() {
   createCanvas(windowWidth,windowHeight);
+  imageMode(CENTER)
+  ellipseMode(CENTER)
 }
 
 function draw() {
   background(23, 48, 87);
+
+  print(mouseX, mouseY)
   
   noStroke()
   fill(5, 125, 13)
@@ -21,5 +33,19 @@ function draw() {
   
   fill(1, 120, 66)
   triangle(360,434, 426, 339, 482, 434)
-    
+  
+  if(mouseIsPressed){
+  background(125, 160, 255)
+  image(sun, 563, 138)
+  
+  noStroke()
+  fill(5, 125, 13)
+  rect(1, 500, windowWidth, 700)
+
+  fill(125, 1, 5)
+  rect(400, 400, 50, 100)
+  
+  fill(1, 120, 66)
+  triangle(360,434, 426, 339, 482, 434)
+  }
 }
