@@ -1,6 +1,7 @@
 
-//Skies
+//Night
 let nightSky
+let nightHills
 
 //Tombstones for Lose Screen/Secret Ending
 let regularTombstone
@@ -33,6 +34,7 @@ function preload(){
 	regularTombstone = loadImage('RegularTombstone.png')
 	zombieTombstone = loadImage('ZombieTombstone.png')
 	nightSky = loadImage('Nightsky.png')
+	nightHills = loadImage('Nighthill2.jpg')
 
 }
 
@@ -70,31 +72,33 @@ function draw(){
 	}
 
 
-	print(mouseX, mouseY)
+	//print(mouseX, mouseY)
 
 }
 
 function title(){
-	image(crackedBackground, windowWidth/2, windowHeight/2)
+	image(crackedBackground, windowWidth/2, windowHeight/2, windowWidth, windowHeight)
 	noTint()
 	fill(255)
 	textFont(customFont)
-	textSize(35)
+	textSize(42)
+	strokeWeight(3)
+	stroke('black')
 	text('Welcome to the Stickman Trials', windowWidth/2, windowHeight/2-15)
 	text('Press C to continue', windowWidth/2, windowHeight/2+15)
 }
 
 function intro(){
 	noTint()
-	image(crackedBackground, windowWidth/2, windowHeight/2)
+	image(crackedBackground, windowWidth/2, windowHeight/2, windowWidth, windowHeight)
 	fill(255)
-	image(stickman, windowWidth/2, windowHeight-150, 100, 150)
+	image(stickman, windowWidth/2, windowHeight-200, 200, 320)
 	text('This will be you. You have one job.', windowWidth/2, windowHeight/2-100)
 }
 
 function keep(){
 	tint(255, 0, 0)
-	image(crackedBackground, windowWidth/2, windowHeight/2)
+	image(crackedBackground, windowWidth/2, windowHeight/2, windowWidth, windowHeight)
 
 	fill(255, 0, 0)
 	text('KEEP YOURSELF ALIVE', windowWidth/2, windowHeight/2)
@@ -102,7 +106,7 @@ function keep(){
 
 function lets(){
 	noTint()
-	image(crackedBackground, windowWidth/2, windowHeight/2)
+	image(crackedBackground, windowWidth/2, windowHeight/2, windowWidth, windowHeight)
 	fill(255)
 	text('Lets Begin', windowWidth/2, windowHeight/2)
 
@@ -110,20 +114,20 @@ function lets(){
 
 function lose(){
 	noTint()
-	image(nightSky, windowWidth/2, windowHeight/2)
-	image(regularTombstone, windowWidth/2, windowHeight-100, 200, 200)
+	image(nightHills, windowWidth/2, windowHeight/2-200)
+	image(regularTombstone, windowWidth/2, windowHeight-200, 400, 400)
 	fill(255)
-	text('You died.', windowWidth/2, windowHeight-300)
-	text('Congrats on failing at your only goal.', windowWidth/2, windowHeight-270)
+	text('You died.', windowWidth/2, windowHeight-600)
+	text('Congrats on failing at your only goal.', windowWidth/2, windowHeight-550)
 		
 }
 
 function secret(){
 	noTint()
-	image(nightSky, windowWidth/2, windowHeight/2)
-	image(zombieTombstone, windowWidth/2, windowHeight-150, 300, 300)
+	image(nightHills, windowWidth/2, windowHeight/2-200)
+	image(zombieTombstone, windowWidth/2, windowHeight-270, 600, 600)
 	fill(255)
-	text('Or did you?', windowWidth/2, windowHeight-300)
+	
 }
 
 function keyPressed(){
