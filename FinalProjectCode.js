@@ -75,7 +75,7 @@ function draw(){
 }
 
 function title(){
-	image(crackedBackground, 400, 0)
+	image(crackedBackground, windowWidth-500, windowHeight)
 
 	fill(255)
 	textFont(customFont)
@@ -85,7 +85,7 @@ function title(){
 }
 
 function intro(){
-	image(crackedBackground, 400, 0)
+	image(crackedBackground, windowWidth-500, windowHeight)
 	fill(255)
 	image(stickman, windowWidth/2, windowHeight-150, 100, 150)
 	text('This will be you. You have one job.', windowWidth/2, windowHeight/2-100)
@@ -93,7 +93,7 @@ function intro(){
 
 function keep(){
 	tint(255, 0, 0)
-	image(crackedBackground, 400, 0)
+	image(crackedBackground, windowWidth-500, windowHeight)
 
 	fill(255, 0, 0)
 	text('KEEP YOURSELF ALIVE', windowWidth/2, windowHeight/2)
@@ -101,14 +101,14 @@ function keep(){
 
 function lets(){
 	noTint()
-	image(crackedBackground, 400, 0)
+	image(crackedBackground, windowWidth-500, windowHeight)
 	fill(255)
 	text('Lets Begin', windowWidth/2, windowHeight/2)
 
 }
 
 function lose(){
-	image(nightSky, 400, 0)
+	image(nightSky, windowWidth, windowHeight)
 	image(regularTombstone, windowWidth/2, windowHeight-100, 200, 200)
 	fill(255)
 	text('You died.', windowWidth/2, windowHeight-300)
@@ -117,7 +117,7 @@ function lose(){
 }
 
 function secret(){
-	image(nightSky, 400, 0)
+	image(nightSky, windowWidth, windowHeight)
 	image(zombieTombstone, windowWidth/2, windowHeight-150, 300, 300)
 	fill(255)
 	text('Or did you?', windowWidth/2, windowHeight-300)
