@@ -76,7 +76,7 @@ function draw(){
 
 function title(){
 	image(crackedBackground, windowWidth-500, windowHeight)
-
+	noTint()
 	fill(255)
 	textFont(customFont)
 	textSize(35)
@@ -85,6 +85,7 @@ function title(){
 }
 
 function intro(){
+	noTint()
 	image(crackedBackground, windowWidth-500, windowHeight)
 	fill(255)
 	image(stickman, windowWidth/2, windowHeight-150, 100, 150)
@@ -108,6 +109,7 @@ function lets(){
 }
 
 function lose(){
+	noTint()
 	image(nightSky, windowWidth, windowHeight)
 	image(regularTombstone, windowWidth/2, windowHeight-100, 200, 200)
 	fill(255)
@@ -117,6 +119,7 @@ function lose(){
 }
 
 function secret(){
+	noTint()
 	image(nightSky, windowWidth, windowHeight)
 	image(zombieTombstone, windowWidth/2, windowHeight-150, 300, 300)
 	fill(255)
