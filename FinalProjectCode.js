@@ -169,6 +169,7 @@ function lets(){
 	noTint()
 	image(crackedBackground, 769, 377, 1000, 700)
 	fill(255)
+	textSize(42)
 	text('Lets Begin', 769, 377)
 
 }
@@ -257,87 +258,95 @@ function callBoss(){
 //key functions
 
 function keyPressed(){
-	if(key == 'c'){
-		titleBool = false
-		introBool = true
-		keycount++
+	if(key == 'c'){ 
+		if(titleBool == true){
+			titleBool = false
+			introBool = true
+			
+			
+		}
 
-	}
-
-	if(keycount == 2){
+		if(introBool == true){
 		introBool = false
 		keepBool = true
-		keycount++
-	}
-
-	if(keycount == 4){
+		
+		
+		}
+		if(keepBool == true){
 		keepBool = false
 		letsBool = true
-		keycount++
-	}
-
-	if(keycount == 6){
-		letsBool = false
-		startBool = true
-		keycount++
-	}
-
-	if(keycount == 8){
-		if(crashBool == true){
-		crashBool = false
-		crashTwoBool = true
+		
+		
 		}
-		keycount++
+
 	}
 
+	
 
-	// not working need help
-	if(keycount == 10){
-		if(callBossBool == true){
-		callBossBool = false
-		loseBool = true
-		}
-	}
+	
 
-	// if(key == 'l'){
+	// if(keycount == 6){
 	// 	letsBool = false
+	// 	startBool = true
+	// 	//keycount++
+	// }
+
+	// if(keycount == 8){
+	// 	if(crashBool == true){
+	// 	crashBool = false
+	// 	crashTwoBool = true
+	// 	}
+	// 	//keycount++
+	// }
+
+
+	// // not working need help
+	// if(keycount == 10){
+	// 	if(callBossBool == true){
+	// 	callBossBool = false
 	// 	loseBool = true
+	// 	}
 	// }
 
-	// if(key == '='){
-	// 	loseBool = false
-	// 	secretBool = true
+	// // if(key == 'l'){
+	// // 	letsBool = false
+	// // 	loseBool = true
+	// // }
+
+	// // if(key == '='){
+	// // 	loseBool = false
+	// // 	secretBool = true
+
+	// // }
+
+	// if(key == 'a'){
+	// 	startBool = false
+	// 	rushBool = true
+	// 	keycountA++
 
 	// }
 
-	if(key == 'a'){
-		startBool = false
-		rushBool = true
-		keycountA++
+	// if(keycountA == 2){
+	// 	crashBool = true
+	// 	rushBool = false
+	// 	keycountA++
+	// }
 
-	}
+	// if(keycountA == 4){
+	// 	crashTwoBool = false
+	// 	callBossBool = true
+	// }
 
-	if(keycountA == 2){
-		crashBool = true
-		rushBool = false
-		keycountA++
-	}
+	// if(key == 'b'){
+	// 	rushBool = false
+	// 	driveBool = true
+	// 	keycountB++
+	// }
 
-	if(keycountA == 4){
-		crashTwoBool = false
-		callBossBool = true
-	}
-
-	if(key == 'b'){
-		rushBool = false
-		driveBool = true
-		keycountB++
-	}
-
-	if(key == 'e'){
-		crashBool= true
-		driveBool = false
-	}
+	// if(key == 'e'){
+	// 	crashBool= true
+	// 	driveBool = false
+	// }
 }
 
 	
