@@ -18,9 +18,14 @@ let r = 0
 let g = 0
 let b = 0
 
+let baby
+
+let airstrikeFont
+
 function preload(){
 	modem = loadSound('ModemSound.mp3')
-	baby = loadImage('dancingbaby2.gif')
+	baby = createImg('dancingbaby2.gif')
+	airstrikeFont = loadFont('airstrike.ttf')
 
 }
 
@@ -77,7 +82,12 @@ function playModem(){
 
 function draw(){
 	background(r, g, b) // old one background(bgSlider.value())
-	background(baby)
+	baby.position(200, 200)
+	textSize(40)
+	textFont(airstrikeFont)
+	fill(255)
+	text('Dancing Baby Site!', windowWidth/2, 50)
+	
 	level = amplitude.getLevel()
 	let size = map(level, 0, .6, 0, 900) //try not to use size here 
 	ellipse(width/2, height/2, size, size)
