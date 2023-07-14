@@ -541,9 +541,9 @@ function remember(){
 	image(room, width/2, height/2, 1000, 700)
 	image(stickman, width/2, 450, 200, 300)
 	textSize(40)
-	text('wwwWait. You remember everything......?', 400, 100)
+	text('WWWWWWait. You remEmber everything......?', 400, 100)
 	text('......What is goi(#ng on?!??!??????!?????', 490, 150)
-	text('What is this? Why am I l;kdfj aHEREdlkfjYOUlk', 480, 284)
+	text('What is this? Why am I  l;efoj a HERE dlkfj YOU l[', 480, 284)
 	text('(C) pokjiunBREAKj', width/2, 500)
 	text('(C) iuyFREEugnaute', width/2 , 650)
 }
