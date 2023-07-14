@@ -1212,6 +1212,9 @@ function keyPressed(){
 	}
 
 	if(keepBool == true && key == 'c'){
+		backgroundSound.rate(.4)
+		backgroundSound.setVolume(.3)
+		backgroundSound.loop()
 		keepBool = false
 		letsBool = true
 
@@ -1219,9 +1222,6 @@ function keyPressed(){
 	}
 
 	if(letsBool == true && key == 'c'){
-		backgroundSound.rate(.4)
-		backgroundSound.setVolume(.3)
-		backgroundSound.loop()
 		letsBool = false
 		startBool = true
 		
