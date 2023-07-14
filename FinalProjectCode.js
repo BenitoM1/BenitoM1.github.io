@@ -541,11 +541,12 @@ function remember(){
 	image(room, width/2, height/2, 1000, 700)
 	image(stickman, width/2, 450, 200, 300)
 	textSize(40)
-	text('WWWWWWait. You remEmber everything......?', 400, 100)
+	text('WWWWWWait. I remEmber everything......?', 400, 100)
 	text('......What is goi(#ng on?!??!??????!?????', 490, 150)
-	text('What is this? Why am I  l;efoj a HERE dlkfj YOU l[', 480, 284)
-	text('(C) pokjiunBREAKj', width/2, 500)
-	text('(C) iuyFREEugnaute', width/2 , 650)
+	text('What is this? Why am I--_l;efoj_a_HERE_dlkfj_YOU_l[', 480, 284)
+	text('pokjiun_BREAK_j', width/2, 500)
+	text('(C)', width/2, 575)
+	text('iuy_FREE_ugnaute', width/2 , 650)
 }
 
 function breakout(){
@@ -1200,6 +1201,7 @@ function keyPressed(){
 	if(rememberBool == true && key == 'c'){
 		rememberBool = false
 		breakoutBool = true
+		alert('ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ')
 		loseSound.stop()
 
 		return false
