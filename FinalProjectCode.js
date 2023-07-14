@@ -473,6 +473,7 @@ function draw(){
 }
 
 function title(){
+	clear()
 	image(crackedBackground, width/2, height/2, 1000, 700)
 	fill(255)
 	textFont(customFont)
@@ -528,7 +529,7 @@ function start(){
 	text('(B) Skip out on work for today and sleep longer.', width/2, 220)
 	textSize(10)
 	fill(150, 78, 20)
-	text('press (R) only if you played a few times', 100, 690)
+	text('press (E) only if you played a few times', 100, 690)
 	fill(255)
 }
 
@@ -1143,9 +1144,23 @@ function crawlTwo(){
 //key functions
 
 function keyPressed(){
-	if(startBool == true && key == 'r'){
+	if(startBool == true && key == 'e'){
 		startBool = false
 		rememberBool = true
+
+		return false
+	}
+
+	if(loseBool == true && key == 'r'){
+		loseBool = false
+		titleBool = true
+
+		return false
+	}
+
+	if(winBool == true && key == 'r'){
+		winBool = false
+		titleBool = true 
 
 		return false
 	}
